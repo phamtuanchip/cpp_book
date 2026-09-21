@@ -1,0 +1,17 @@
+{
+  "name": "cpp-book",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Sach C++ cho ky su he thong nhung - build HTML/PDF tu manuscript Markdown",
+  "scripts": {
+    "build:html": "node tools/build.js html",
+    "build:pdf": "node tools/build.js pdf",
+    "check": "node tools/build.js check",
+    "verify": "node tools/verify.js",
+    "build": "node tools/build.js all"
+  },
+  "dependencies": {
+    "highlight.js": "^11.9.0",
+    "markdown-it": "^14.1.0"
+  }
+}

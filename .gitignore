@@ -1,0 +1,9 @@
+node_modules/
+dist/
+formats/*.pdf
+formats/*.epub
+formats/_tmp/
+build/
+*.o
+*.exe
+*.out

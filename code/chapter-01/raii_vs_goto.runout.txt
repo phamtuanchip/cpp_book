@@ -1,0 +1,24 @@
+C   fail_at=0
+  lock
+  unlock
+  rc=0 locked=0
+C++ fail_at=0
+  lock
+  unlock
+  rc=0 locked=0
+C   fail_at=1
+  lock
+  unlock
+  rc=-1 locked=0
+C++ fail_at=1
+  lock
+  unlock
+  rc=-1 locked=0
+C   fail_at=2
+  lock
+  unlock
+  rc=-1 locked=0
+C++ fail_at=2
+  lock
+  unlock
+  rc=-2 locked=0

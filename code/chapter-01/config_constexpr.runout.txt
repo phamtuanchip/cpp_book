@@ -1,0 +1,3 @@
+divisor = 8
+ADC 12 bit max = 4095
+squares[7] = 49

@@ -1,0 +1,14 @@
+/* Chi dung cho PDF: ghi de mau sang, cat trang, so trang */
+@page { size: A4; margin: 22mm 18mm 22mm 18mm; @bottom-center { content: counter(page); font-size: 9pt; color: #666; } }
+@page :first { @bottom-center { content: none; } }
+:root { --fg:#111; --muted:#555; --bg:#fff; --side:#fff; --accent:#0b5cad; --code-bg:#f6f8fa; --border:#ccc; }
+body { font-size: 10.5pt; line-height: 1.55; }
+.cover { height: 240mm; display:flex; flex-direction:column; justify-content:center; align-items:center; text-align:center; page-break-after: always; }
+.cover h1 { font-size: 30pt; margin:0 0 8mm; } .cover-sub { font-size: 16pt; color:#444; } .cover-author { margin-top: 30mm; font-size: 13pt; }
+.toc { page-break-after: always; } .toc-part { margin-top: 5mm; font-weight:700; } .toc-item { margin-left: 4mm; } .toc a { color: var(--fg); text-decoration:none; }
+.part-page { page-break-before: always; page-break-after: always; height: 200mm; display:flex; align-items:center; justify-content:center; }
+.part-page h1 { font-size: 24pt; }
+.chapter { page-break-before: always; }
+.chapter > h1 { margin-top: 0; }
+h2, h3 { page-break-after: avoid; } pre, table, blockquote { page-break-inside: avoid; }
+pre.hljs { font-size: 8.5pt; white-space: pre-wrap; word-break: break-word; overflow: visible; }

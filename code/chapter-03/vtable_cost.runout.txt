@@ -1,0 +1,3 @@
+sizeof(Plain)   = 4
+sizeof(Virtual) = 16
+sizeof(void*)   = 8

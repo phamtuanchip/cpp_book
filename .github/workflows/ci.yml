@@ -1,0 +1,17 @@
+name: Code samples
+on: [push, pull_request]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Compile and run every example
+        run: |
+          set -e
+          for f in code/chapter-*/*.cpp; do
+            echo "== $f"
+            g++ -std=c++20 -Wall -Wextra -o /tmp/a.out "$f"
+            /tmp/a.out > "${f%.cpp}.runout.txt"
+          done
+      - name: Check book sources
+        run: node tools/build.js check

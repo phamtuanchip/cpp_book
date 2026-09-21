@@ -1,0 +1,6 @@
+title: "C++ cho kỹ sư hệ thống nhúng"
+subtitle: "Từ cơ bản đến nâng cao"
+author: "Lukas"
+language: vi
+description: "Học C++ hiện đại cho hệ thống nhúng: từ nền tảng ngôn ngữ cấp thấp, bộ nhớ, driver, RTOS đến định hướng Rust/Zig."
+keywords: [C++, embedded, nhúng, MCU, RTOS, lập trình]

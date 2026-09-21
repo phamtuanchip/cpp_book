@@ -1,0 +1,9 @@
+Chu trinh binh thuong:
+  -> Filling
+  -> Washing
+  -> Draining
+  -> Done
+Mo cua giua chu trinh:
+  -> Filling
+  -> Washing
+  -> Fault
