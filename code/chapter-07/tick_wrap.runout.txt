@@ -1,0 +1,3 @@
+sau  100 ms: dung=0 sai=1
+sau  999 ms: dung=0 sai=0
+sau 1000 ms: dung=1 sai=1

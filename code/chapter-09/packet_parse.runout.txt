@@ -1,0 +1,4 @@
+hop le        -> Ok (len=3, byte dau=0x10)
+sai checksum  -> BadChecksum
+bi cat        -> BadLength
+nhieu         -> BadStart

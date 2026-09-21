@@ -1,0 +1,3 @@
+crc8(frame)        = 0xE3
+crc8("123456789")  = 0xF4
+crc8(frame[1..])   = 0xF5

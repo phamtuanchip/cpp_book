@@ -1,0 +1,5 @@
+[u32] 42
+[str] khoi dong
+gui binh thuong : Ok
+gui con tro rong: InvalidArg
+timeout = 0     : Timeout

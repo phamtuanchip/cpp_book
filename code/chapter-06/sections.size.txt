@@ -1,0 +1,4 @@
+$ g++ -std=c++20 -Os -c sections_demo.cpp -o sections_demo.o
+$ size sections_demo.o
+   text	   data	    bss	    dec	    hex	filename
+    180	     16	    288	    484	    1e4	sections_demo.o

@@ -1,0 +1,20 @@
+t= 0 raw=0 
+t= 1 raw=1 
+t= 2 raw=0 
+t= 3 raw=1 
+t= 4 raw=1 
+t= 5 raw=0 
+t= 6 raw=1 
+t= 7 raw=1 
+t= 8 raw=1 
+t= 9 raw=1 => NHAN
+t=10 raw=1 
+t=11 raw=1 
+t=12 raw=0 
+t=13 raw=1 
+t=14 raw=0 
+t=15 raw=0 
+t=16 raw=0 
+t=17 raw=0 => NHA
+t=18 raw=0 
+t=19 raw=0 

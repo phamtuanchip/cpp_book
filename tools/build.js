@@ -98,7 +98,7 @@ function inlineCode(src) {
     })
     .replace(/\{\{out:([^}]+)\}\}/g, (_, p) => {
       const f = path.join(ROOT, 'code', p + '.runout.txt');
-      if (!fs.existsSync(f)) return '```text\n(chưa có output — chạy `npm run verify` để sinh file .runout.txt)\n```';
+      if (!fs.existsSync(f)) return '> *Chạy ví dụ trên máy bạn để xem kết quả.*';
       return '```text\n' + fs.readFileSync(f, 'utf8').replace(/\s+$/, '') + '\n```';
     });
 }

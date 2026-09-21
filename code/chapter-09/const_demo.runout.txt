@@ -1,0 +1,4 @@
+value=11 other=20 *p_to_const=20 *both=11
+T=2.5 C  H=50.0 %
+T=-35.0 C  H=50.0 %
+cam bien loi

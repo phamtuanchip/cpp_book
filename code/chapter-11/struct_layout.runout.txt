@@ -1,0 +1,3 @@
+sizeof(Bad)=12 sizeof(Good)=8 sizeof(Header)=4
+Bad : a@0 b@4 c@8
+Good: b@0 a@4 c@5

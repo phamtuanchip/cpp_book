@@ -1,0 +1,3 @@
+[T=25.3 C node=7] ok=1 len=15
+[qua dai: 1] ok=0
+view=[T=25.3 ]
