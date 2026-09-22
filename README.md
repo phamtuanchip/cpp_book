@@ -220,10 +220,11 @@ Yêu cầu: Node 18+, Chrome hoặc Edge (hoặc đặt `CHROME_PATH`), g++ + CM
 - [x] Lời tựa + ch01–ch15 (Phần 0 ch01-04, Phần 1 ch05-06, Phần 2 ch07-11, Phần 3 ch12-15); build HTML/PDF chạy được.
 - [x] g++ 16.2 (MSYS2 UCRT64) cài sẵn. `npm run verify` mặc định chỉ **biên dịch kiểm tra** (`-fsyntax-only`, nhanh, không tạo/chạy file thực thi — an toàn với phần mềm bảo mật máy); thêm `-- --run` khi cần chạy thật và sinh `*.runout.txt`. ch01–ch11 đã có output thật; ch12–ch15 mới biên dịch kiểm tra (theo yêu cầu tạm hoãn chạy exe), sách hiện hiển thị "chạy trên máy bạn để xem kết quả" ở các ví dụ đó — chạy `npm run verify -- --run chapter-12 chapter-13 chapter-14 chapter-15` để lấp đầy khi tiện.
 - [ ] Tra cứu và xác minh lại các tên chuẩn/giao thức trong ch01, ch04 từ nguồn chính thức trước khi xuất bản.
-- [ ] Phần 4 (C++ hiện đại, ch16-19) trở đi.
 - [x] g++ 16.2 (MSYS2 UCRT64) đã cài; 11 ví dụ biên dịch sạch với `-Wall -Wextra`, output thật lưu trong `code/chapter-*/*.runout.txt`; CMake ch05 chạy được. Các lỗi biên dịch sách nhắc tới (`Gpio<40>`, `enum class`→`int`) đã kiểm chứng.
 - [ ] ch05 (môi trường cross/CMake toolchain file) và Phần 2 (C++ cơ bản).
 - [ ] Bật GitHub Pages cho repo.
+- [x] Bản thảo đầy đủ ch16–ch36 (Phần 4 C++ hiện đại, Phần 5 bộ nhớ, Phần 6 nhúng thực chiến, Phần 7 chất lượng/hiệu năng, Phần 8 định hướng + phụ lục cheat sheet); `npm run check` OK (37 file), `npm run build:html` chạy được.
+- [ ] ch16–ch36: code mới **CHƯA được `npm run verify` biên dịch lần nào** (theo yêu cầu tạm hoãn build/chạy exe trong phiên viết này) — chạy `npm run verify -- --run chapter-16 ... chapter-36` để biên dịch, sửa lỗi nếu có, và sinh `*.runout.txt` thật, rồi người duyệt rà lại trước khi coi các chương này "verified" như ch01–ch11.
 
 Build: `npm install` rồi `npm run build` (hoặc `build:html`, `build:pdf`, `check`).
 
