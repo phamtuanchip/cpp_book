@@ -2,7 +2,7 @@
 
 Dạy C++ từ cơ bản đến nâng cao, tập trung cho kỹ sư hệ thống nhúng: từ câu chuyện nền tảng, ngôn ngữ cấp thấp, thực tiễn sử dụng đến định hướng phát triển và các ngôn ngữ hỗ trợ mới (Rust, Zig...).
 
-- Đọc online (GitHub Pages): https://phamtuanchip.github.io/cpp_book/ *(sau khi bật Pages)*
+- Đọc online (GitHub Pages): https://phamtuanchip.github.io/cpp_book/
 - Định dạng đầu ra: **HTML** và **PDF** trước; **EPUB** và **Amazon KDP** sau.
 - Sách viết cùng AI: mỗi chương có prompt sinh nội dung, checklist duyệt, và ví dụ chạy được.
 
@@ -222,9 +222,9 @@ Yêu cầu: Node 18+, Chrome hoặc Edge (hoặc đặt `CHROME_PATH`), g++ + CM
 - [ ] Tra cứu và xác minh lại các tên chuẩn/giao thức trong ch01, ch04 từ nguồn chính thức trước khi xuất bản.
 - [x] g++ 16.2 (MSYS2 UCRT64) đã cài; 11 ví dụ biên dịch sạch với `-Wall -Wextra`, output thật lưu trong `code/chapter-*/*.runout.txt`; CMake ch05 chạy được. Các lỗi biên dịch sách nhắc tới (`Gpio<40>`, `enum class`→`int`) đã kiểm chứng.
 - [ ] ch05 (môi trường cross/CMake toolchain file) và Phần 2 (C++ cơ bản).
-- [ ] Bật GitHub Pages cho repo.
+- [x] Bật GitHub Pages cho repo (nguồn: GitHub Actions qua `pages.yml`); site đã deploy thành công.
 - [x] Bản thảo đầy đủ ch16–ch36 (Phần 4 C++ hiện đại, Phần 5 bộ nhớ, Phần 6 nhúng thực chiến, Phần 7 chất lượng/hiệu năng, Phần 8 định hướng + phụ lục cheat sheet); `npm run check` OK (37 file), `npm run build:html` chạy được.
-- [ ] ch16–ch36: code mới **CHƯA được `npm run verify` biên dịch lần nào** (theo yêu cầu tạm hoãn build/chạy exe trong phiên viết này) — chạy `npm run verify -- --run chapter-16 ... chapter-36` để biên dịch, sửa lỗi nếu có, và sinh `*.runout.txt` thật, rồi người duyệt rà lại trước khi coi các chương này "verified" như ch01–ch11.
+- [x] ch12–ch35: **mọi ví dụ đã được CI biên dịch (`g++ -std=c++20 -Wall -Wextra`) và chạy thật**; output lưu trong `code/chapter-*/*.runout.txt`. Máy tác giả bị Application Control chặn chạy `g++`, nên `ci.yml` đóng vai trò "máy biên dịch": nó sinh `*.runout.txt` và upload artifact tên `runout` để tải về commit (`gh run download <id> -n runout`).
 
 Build: `npm install` rồi `npm run build` (hoặc `build:html`, `build:pdf`, `check`).
 

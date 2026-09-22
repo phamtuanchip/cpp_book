@@ -1,6 +1,6 @@
 tich luy (int32) = 150
 gia tri thuc uoc tinh = 0.0750
-dau ra sau requantize + ReLU (int8) = 0
+dau ra sau requantize + ReLU (int8) = 7
 
 So sanh: cung phep toan bang float32 truc tiep:
 float32: 0.0750 (so voi uoc tinh tu int32 o tren, chenh lech la sai so luong tu hoa)
