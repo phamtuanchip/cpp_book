@@ -5,6 +5,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 20 }
+      - run: npm ci
       - name: Compile and run every example
         run: |
           set -e
@@ -15,3 +18,11 @@ jobs:
           done
       - name: Check book sources
         run: node tools/build.js check
+      # May tac gia bi chan chay g++ (Application Control policy), nen output that duoc sinh o day
+      # va tai ve qua artifact de commit vao code/chapter-*/*.runout.txt.
+      - name: Upload real example outputs
+        uses: actions/upload-artifact@v4
+        with:
+          name: runout
+          path: code/chapter-*/*.runout.txt
+          if-no-files-found: error
