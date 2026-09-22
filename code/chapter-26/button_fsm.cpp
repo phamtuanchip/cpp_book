@@ -11,14 +11,15 @@ public:
     void tick(bool raw_pressed) {
         switch (state_) {
             case ButtonState::Released:
-                if (raw_pressed) { state_ = ButtonState::Debouncing; counter_ = 0; }
+                // Dem tu 1: chinh tick nay DA la tick dau tien thay tin hieu nhan.
+                if (raw_pressed) { state_ = ButtonState::Debouncing; counter_ = 1; }
                 break;
             case ButtonState::Debouncing:
                 if (!raw_pressed) { state_ = ButtonState::Released; break; }
                 if (++counter_ >= kDebounceTicks) { state_ = ButtonState::Pressed; on_press_edge_ = true; }
                 break;
             case ButtonState::Pressed:
-                if (!raw_pressed) { state_ = ButtonState::Releasing; counter_ = 0; }
+                if (!raw_pressed) { state_ = ButtonState::Releasing; counter_ = 1; }
                 break;
             case ButtonState::Releasing:
                 if (raw_pressed) { state_ = ButtonState::Pressed; break; }

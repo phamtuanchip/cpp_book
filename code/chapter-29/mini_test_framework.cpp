@@ -27,7 +27,8 @@ public:
         bool edge = false;
         switch (state_) {
             case ButtonState::Released:
-                if (raw_pressed) { state_ = ButtonState::Debouncing; counter_ = 0; }
+                // Dem tu 1: chinh tick nay DA la tick dau tien thay tin hieu nhan.
+                if (raw_pressed) { state_ = ButtonState::Debouncing; counter_ = 1; }
                 break;
             case ButtonState::Debouncing:
                 if (!raw_pressed) { state_ = ButtonState::Released; break; }
