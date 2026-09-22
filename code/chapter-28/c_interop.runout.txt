@@ -1,0 +1,4 @@
+describe(int)
+describe(double)
+c_sensor_init: sample_rate=1000 gain=4
+gia tri cuoi nhan tu callback kieu C: 1234

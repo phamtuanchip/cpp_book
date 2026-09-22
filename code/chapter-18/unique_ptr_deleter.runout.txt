@@ -1,0 +1,6 @@
+muon SPI1
+muon lan 2: tu choi
+tra SPI1
+sau khi tra: duoc
+sizeof(SpiLease)=8 sizeof(void*)=8
+tra SPI1

@@ -1,0 +1,4 @@
+ODR porta sau khi bat LED = 0x00000020
+ODR porta sau 3 lan toggle (le -> tat) = 0x00000000
+ButtonPin::read() = dang an
+sizeof(LedPin) = 1 (kieu rong; khong doi tuong nao duoc tao trong vi du nay)

@@ -1,0 +1,3 @@
+apply_twice(multiply, 5) = 45
+apply_twice(add_one, 5) = 7
+sizeof(FunctionRef<int(int)>) = 16 (chi 2 con tro, bat ke callable ben trong lon co nao)

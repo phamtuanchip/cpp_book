@@ -1,0 +1,4 @@
+classify(5) = 1, classify(-5) = -1, classify(0) = 0
+clamp_to_byte(300) = 255, clamp_to_byte(-10) = 0, clamp_to_byte(200) = 200
+validate_frame(null, 10) = khong hop le
+het 3 lan thu, bao loi (timeout moi lan 500 ms)

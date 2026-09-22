@@ -1,0 +1,6 @@
+-- volatile: mot noi ghi, mot noi doc --
+nhan mau moi: 2048
+-- atomic: doc-sua-ghi an toan hon khi co tranh chap --
+so lan ngat da dem = 5
+sizeof(atomic<uint32_t>) = 4 (thuong bang sizeof(uint32_t), kiem tra .is_lock_free() tren toolchain that)
+atomic co lock-free tren kieu nay? co

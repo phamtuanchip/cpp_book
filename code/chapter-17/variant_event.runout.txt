@@ -1,0 +1,4 @@
+nut 2 nhan
+timer het 100 ms
+nhan byte 0x41
+sizeof(Event)=8

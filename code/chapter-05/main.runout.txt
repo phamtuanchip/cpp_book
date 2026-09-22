@@ -1,2 +1,2 @@
 __cplusplus = 202002L
-compiler    = gcc 16.2
+compiler    = gcc 13.3

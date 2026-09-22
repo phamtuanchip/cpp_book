@@ -1,0 +1,7 @@
+Logger('boot') khoi tao
+[boot] he thong khoi dong
+Logger('boot') huy
+Logger('sensor') khoi tao
+[sensor] doc cam bien xong
+Logger('sensor') huy
+sizeof(storage) = 8, khong co byte nao tu heap duoc dung

@@ -1,0 +1,6 @@
+size=3 capacity=4 full=khong
+10 20 30 
+push thu 5 THAT BAI (da day, dung nhu mong doi)
+raw=2048 -> 25.5 C
+raw=2100 -> 26.1 C
+sizeof(FixedVector<int,4>) = 24 (co dinh, biet duoc luc bien dich)

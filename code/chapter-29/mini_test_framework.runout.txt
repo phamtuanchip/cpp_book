@@ -1,0 +1,5 @@
+test: khong nhan -> khong bao gio pressed
+test: nhan du lau -> chuyen sang pressed dung mot lan
+test: rung ngan -> khong tinh la nhan
+
+KET QUA: 19 dat, 0 that bai

@@ -1,0 +1,8 @@
+CS: xuong (chon chip)
+CS: len (tha chip)
+nhan duoc: 0x11 0x21 0x31 0x41 
+CS con dang chon chip sau giao dich? khong (dung)
+CS: xuong (chon chip)
+loi: kich thuoc tx/rx khac nhau, huy giao dich
+CS: len (tha chip)
+CS sau giao dich loi? khong (dung)

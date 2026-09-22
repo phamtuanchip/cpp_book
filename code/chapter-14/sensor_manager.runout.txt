@@ -1,0 +1,6 @@
+[FakeTemp] init
+[FakeHumidity] init
+FakeTemp       -> 20
+FakeHumidity   -> 55
+FakeTemp       -> 21
+FakeHumidity   -> 55

@@ -1,0 +1,2 @@
+safe_pattern_using_index() = 1
+safe_pattern_reference_after_mutation() = 1

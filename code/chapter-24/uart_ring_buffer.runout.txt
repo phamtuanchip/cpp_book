@@ -1,0 +1,5 @@
+ring buffer dang giu 5 byte
+doc ra: HELLO
+CANH BAO: ring buffer day, mat 1 byte (can xu ly vong lap chinh nhanh hon hoac tang N)
+CANH BAO: ring buffer day, mat 1 byte (can xu ly vong lap chinh nhanh hon hoac tang N)
+CANH BAO: ring buffer day, mat 1 byte (can xu ly vong lap chinh nhanh hon hoac tang N)

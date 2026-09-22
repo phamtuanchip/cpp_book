@@ -1,0 +1,3 @@
+KHUNG HOAN TAT, do dai=3, du lieu="ABC"
+parser: huy khung (checksum sai), quay ve cho STX
+KHUNG HOAN TAT, do dai=1, du lieu="Z"

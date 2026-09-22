@@ -1,0 +1,7 @@
+cs.at(1) = 20
+cs.at(0) = 10
+cs.at(1) = 20
+cs.at(2) = 30
+gia tri = 99
+Thu cs.at(10) (vuot gioi han) se lam chuong trinh dung ngay tai day (assert),
+thay vi doc/ghi vao vung nho khong thuoc ve minh mot cach am tham.

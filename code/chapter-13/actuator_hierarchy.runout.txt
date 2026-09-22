@@ -1,0 +1,5 @@
+Led(pin=5) BAT
+Led(pin=5) TAT
+Buzzer(2000 Hz) KEU
+Buzzer im lang
+led.is_on()=0 buzzer.is_on()=0

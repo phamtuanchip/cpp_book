@@ -1,0 +1,3 @@
+~DerivedB (giai phong tai nguyen o day)
+~BaseVirtual
+g_derived_destructed = 1 (dung: 1)

@@ -1,0 +1,6 @@
+  I2C1: doc dia chi 0x48, thanh ghi 0x00
+temp     = 25
+  I2C1: doc dia chi 0x40, thanh ghi 0x00
+humidity = 25
+  I2C1: doc dia chi 0x48, thanh ghi 0x00
+bad      = 25

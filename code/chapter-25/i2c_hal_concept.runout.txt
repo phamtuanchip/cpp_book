@@ -1,0 +1,2 @@
+I2C ghi: addr=0x76 reg=0x00 value=0x01
+nhiet do doc duoc = 25 C

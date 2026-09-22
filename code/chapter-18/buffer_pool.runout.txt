@@ -1,0 +1,6 @@
+trong: 4
+sau 2 acquire: 2
+consume: dang xu ly buffer
+sau consume: 3 (b con hop le? khong)
+trong scope: 2
+ra scope: 3

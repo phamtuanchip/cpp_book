@@ -1,0 +1,2 @@
+tick  8: PHAT HIEN NHAN (da loc rung)
+tick 21: PHAT HIEN THA (da loc rung)

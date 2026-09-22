@@ -1,0 +1,12 @@
+tick 0:
+  log #1: da gui mau vao hang doi
+  consumer: xu ly mau 1000
+tick 1:
+tick 2:
+  log #2: da gui mau vao hang doi
+  consumer: xu ly mau 1002
+tick 3:
+tick 4:
+  log #3: da gui mau vao hang doi
+  consumer: xu ly mau 1004
+tick 5:

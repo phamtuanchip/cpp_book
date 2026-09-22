@@ -1,0 +1,7 @@
+.text   (ham)         ~ 0x557C5FD9A1A9
+.rodata (hang so)     ~ 0x557C5FD9B010
+.data   (g_initialized) ~ 0x557C5FD9D010
+.bss    (g_zero_filled) ~ 0x557C5FD9D018
+stack   (local_var)   ~ 0x7FFC98A0853C
+heap    (heap_var)    ~ 0x557C919352B0
+g_zero_filled truoc khi gan = 0 (duoc dat 0 tu dau, khong ton Flash de luu gia tri nay)

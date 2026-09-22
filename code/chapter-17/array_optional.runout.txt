@@ -1,0 +1,7 @@
+vuot nguong tai [3] = 2050
+khong co mau nao vuot 5000
+'1234' -> 1234
+'12a4' -> loi
+'' -> loi
+'99999' -> loi
+sizeof(array<u16,6>)=12 sizeof(optional<u8>)=2 sizeof(optional<u32>)=8

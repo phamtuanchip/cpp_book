@@ -1,0 +1,4 @@
+sum_bloat:  16 55 102
+sum_shared: 16 55 102
+Kiem chung that: bien dich voi -Os, dung 'nm --size-sort' hoac Compiler Explorer de
+dem so ban ma sinh ra cho sum_bloat<int,4/10/3> so voi sum_shared_impl<int> (chi 1 ban).

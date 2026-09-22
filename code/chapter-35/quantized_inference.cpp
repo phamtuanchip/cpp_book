@@ -31,7 +31,10 @@ std::int8_t requantize_relu(std::int32_t acc, float scale_in, float scale_w, Qua
     const float real_value = static_cast<float>(acc) * scale_in * scale_w;
     const float requantized = real_value / out_q.scale + static_cast<float>(out_q.zero_point);
     const float relu = requantized > static_cast<float>(out_q.zero_point) ? requantized : static_cast<float>(out_q.zero_point);
-    const float clamped = relu > 127.0f ? 127.0f : (relu < -128.0f ? -128.0f : relu);
+    // LAM TRON ve so nguyen gan nhat, khong cat cut: cat cut (static_cast thang) lam lech ket qua ve
+    // phia 0 mot cach co he thong - voi mang nhieu tang, sai lech nay tich luy lai rat nhanh.
+    const float rounded = relu >= 0.0f ? relu + 0.5f : relu - 0.5f;
+    const float clamped = rounded > 127.0f ? 127.0f : (rounded < -128.0f ? -128.0f : rounded);
     return static_cast<std::int8_t>(clamped);
 }
 
@@ -41,7 +44,7 @@ int main() {
     const std::array<std::int8_t, 4> weights{3, -2, 1, 4};
     const QuantParams in_q{0.05f, 0};   // scale=0.05, zero_point=0 (du lieu dau vao da chuan hoa quanh 0)
     const QuantParams w_q{0.01f, 0};
-    const QuantParams out_q{0.1f, 0};
+    const QuantParams out_q{0.01f, 0};  // thang do dau ra min hon dau vao: giu duoc do phan giai sau ReLU
 
     const std::int32_t acc = quantized_dot(input, weights, in_q, w_q);
     const std::int8_t output = requantize_relu(acc, in_q.scale, w_q.scale, out_q);

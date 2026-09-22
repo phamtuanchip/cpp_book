@@ -1,0 +1,3 @@
+crc8(check) = 0xF4
+crc8(msg)   = 0xCA
+8-bit 16-bit 32-bit+

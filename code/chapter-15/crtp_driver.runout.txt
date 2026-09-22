@@ -1,0 +1,6 @@
+UartDriver: init
+UartDriver: gui byte 0x48
+UartDriver: gui byte 0x49
+SpiDriver: init
+SpiDriver: dich byte 0x48 ra MOSI
+SpiDriver: dich byte 0x49 ra MOSI

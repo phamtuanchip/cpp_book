@@ -1,3 +1,3 @@
-char=1 short=2 int=4 long=4 long long=8 void*=8
+char=1 short=2 int=4 long=8 long long=8 void*=8
 uint8_t=1 uint16_t=2 uint32_t=4 uint64_t=8
 uint8_t max=255, int8_t min=-128

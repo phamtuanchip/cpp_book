@@ -1,0 +1,3 @@
+so byte da nhan = 3, byte cuoi = 2
+Luu y: day la mo phong tren host. Tren MCU that, ten ham ISR phai dung CHINH XAC
+ten ma vector ngat cua startup file/CMSIS mong doi - kiem tra tai lieu vendor SDK.

@@ -1,0 +1,2 @@
+samples: 0 10 20 30 40 50 60 70 
+vung tinh: 256 byte; vector dang dung it nhat 32 byte cho du lieu phan tu

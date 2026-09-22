@@ -1,0 +1,3 @@
+raw=2048 -> 1650 mV
+loi: timeout
+loi: overflow

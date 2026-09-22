@@ -1,0 +1,6 @@
+truoc: irq_enabled=1
+vao update_twice: irq_enabled=0
+  trong increment_shared: irq_enabled=0 counter=1
+  trong increment_shared: irq_enabled=0 counter=3
+truoc khi roi update_twice: irq_enabled=0
+sau  : irq_enabled=1 counter=3

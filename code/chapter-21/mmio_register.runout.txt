@@ -1,0 +1,4 @@
+MODER sau khi cau hinh chan 5 lam output = 0x00000400
+ODR sau khi bat chan 5 = 0x00000020
+ODR sau khi tat chan 5 = 0x00000000
+IDR (phan cung bao chan 3 dang muc cao) = 0x00000008
