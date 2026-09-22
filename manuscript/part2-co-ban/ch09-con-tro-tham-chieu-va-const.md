@@ -81,7 +81,7 @@ Thứ tự kiểm tra là **cố ý**:
 Dữ liệu cảm biến, gói tin mạng có thể chứa byte `0x00` hợp lệ ở giữa. Nếu bạn biểu diễn bằng "chuỗi kết thúc bằng 0" (`const char*`) và dùng `strlen`, độ dài bị cắt ngắn sai. Luôn mang **độ dài đi kèm dữ liệu** (như `Packet::len` ở trên, hoặc `std::span` ở chương 10) cho dữ liệu nhị phân; chỉ dùng chuỗi kết thúc bằng 0 cho văn bản thật sự.
 
 ## Góc nhúng
-- Con trỏ tới thanh ghi phần cứng luôn là `volatile T*` (không phải chỉ `T*`) — chương 19 giải thích vì sao.
+- Con trỏ tới thanh ghi phần cứng luôn là `volatile T*` (không phải chỉ `T*`) — chương 21 giải thích vì sao.
 - Truyền struct nhỏ (≤ 2 từ máy, ví dụ `Reading` 4 byte) theo giá trị có thể rẻ hơn truyền theo tham chiếu (tránh một lần lấy địa chỉ); struct lớn hơn nên truyền `const&`. Không đoán — đo bằng Compiler Explorer nếu nghi ngờ.
 - `nullptr` (C++11) có kiểu riêng (`std::nullptr_t`), an toàn hơn macro `NULL` (thường là `0`) khi nạp chồng hàm.
 
