@@ -8,6 +8,7 @@
     "build:pdf": "node tools/build.js pdf",
     "check": "node tools/build.js check",
     "verify": "node tools/verify.js",
+    "verify:docker": "node tools/verify-docker.js",
     "build": "node tools/build.js all"
   },
   "dependencies": {

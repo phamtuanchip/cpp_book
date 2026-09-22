@@ -185,6 +185,7 @@ Kiểm tra tự động (`tools/bookgen/checks.py`): code fence có ngôn ngữ,
 ```bash
 npm install
 npm run verify       # biên dịch kiểm tra mọi ví dụ (cần g++); thêm `-- --run` để chạy và ghi *.runout.txt
+npm run verify:docker # biên dịch + chạy mọi ví dụ trong container gcc (khi máy không chạy được g++)
 npm run check        # kiểm tra nguồn: số chương, code được chèn, fence có ngôn ngữ
 npm run build:html   # → dist/ (GitHub Pages)
 npm run build:pdf    # → formats/book.pdf (Chrome/Edge headless)
@@ -224,7 +225,11 @@ Yêu cầu: Node 18+, Chrome hoặc Edge (hoặc đặt `CHROME_PATH`), g++ + CM
 - [ ] ch05 (môi trường cross/CMake toolchain file) và Phần 2 (C++ cơ bản).
 - [x] Bật GitHub Pages cho repo (nguồn: GitHub Actions qua `pages.yml`); site đã deploy thành công.
 - [x] Bản thảo đầy đủ ch16–ch36 (Phần 4 C++ hiện đại, Phần 5 bộ nhớ, Phần 6 nhúng thực chiến, Phần 7 chất lượng/hiệu năng, Phần 8 định hướng + phụ lục cheat sheet); `npm run check` OK (37 file), `npm run build:html` chạy được.
-- [x] ch12–ch35: **mọi ví dụ đã được CI biên dịch (`g++ -std=c++20 -Wall -Wextra`) và chạy thật**; output lưu trong `code/chapter-*/*.runout.txt`. Máy tác giả bị Application Control chặn chạy `g++`, nên `ci.yml` đóng vai trò "máy biên dịch": nó sinh `*.runout.txt` và upload artifact tên `runout` để tải về commit (`gh run download <id> -n runout`).
+- [x] ch01–ch35: **63/63 ví dụ biên dịch sạch (`g++ -std=c++20 -Wall -Wextra`, không một cảnh báo) và chạy thật**; output lưu trong `code/chapter-*/*.runout.txt`.
+- [x] Máy tác giả bật **Smart App Control** (khác antivirus — tắt Defender không giúp được) nên `g++.exe` của MSYS2 bị chặn. Hai đường thay thế đã dựng sẵn, không cần đổi cài đặt bảo mật:
+  - `npm run verify:docker` — biên dịch + chạy mọi ví dụ trong container `gcc:14` (cần Docker Desktop đang chạy). Đây là cách nhanh nhất để kiểm tra tại chỗ.
+  - CI `ci.yml` — sinh `*.runout.txt` và upload artifact tên `runout`; tải về bằng `gh run download <run-id> -n runout -D <thư mục>` rồi copy đè vào `code/`.
+- Lưu ý: output của `chapter-05/main` (in phiên bản gcc) và `chapter-20/memory_regions`, `chapter-20/stack_probe` (in địa chỉ bộ nhớ, kích thước khung stack) **thay đổi theo máy/trình biên dịch** — khác biệt giữa các lần chạy là bình thường, không phải lỗi.
 
 Build: `npm install` rồi `npm run build` (hoặc `build:html`, `build:pdf`, `check`).
 

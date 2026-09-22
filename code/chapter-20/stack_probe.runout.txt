@@ -1,5 +1,5 @@
-dia chi o do sau 20: 0x7FFEE37B8684
-dia chi o do sau 0:  0x7FFEE37B8044
-uoc luong ~1600 byte cho 20 khung -> ~80 byte/khung (con so that phu thuoc trinh bien dich/co -O)
+dia chi o do sau 20: 0x7FFF2806F3EC
+dia chi o do sau 0:  0x7FFF2806EEEC
+uoc luong ~1280 byte cho 20 khung -> ~64 byte/khung (con so that phu thuoc trinh bien dich/co -O)
 Ky thuat that tren MCU: dien 0xAA vao toan bo vung stack luc khoi dong (truoc khi goi ham nao),
 sau do dinh ky quet tu day stack len, dem so byte con nguyen 0xAA -> do la luong con lai chua dung toi.
